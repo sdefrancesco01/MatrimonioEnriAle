@@ -79,21 +79,23 @@
 
         /* Immagine finale sotto il testo */
 .footer-image {
-    background-color: transparent !important;
+    background-color: transparent !important; /* Forza la trasparenza */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0; /* Spazio sopra e sotto l'immagine */
+    margin: 10px 0;
     text-align: center;
 }
 
 .footer-image img {
-    background-color: transparent !important;
-    
-    max-width: 600px; /* Non supera i 600px su schermi grandi */
+    background-color: transparent;
+    width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    max-width: 600px; /* Imposta una larghezza massima per schermi più grandi */
     height: auto; /* Mantiene le proporzioni */
-    border-radius: 10px; /* Arrotonda leggermente i bordi */
+    border-radius: 10px;
+    border: none; /* Rimuove eventuali bordi indesiderati */
 }
+
 
         /* Stile per la sezione "Luogo" */
 .location-section {
