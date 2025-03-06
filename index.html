@@ -17,9 +17,10 @@
 /* Sfondo principale */
 .background {
     background-image: url('IMG_4183.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-size: auto; /* Rimuove il ridimensionamento automatico */
+    background-repeat: repeat-y; /* Ripete l'immagine verticalmente */
+    background-position: top center;
+    height: auto; /* Imposta la altezza come automatica per consentire lo scorrimento */
     text-align: center;
     display: flex;
     flex-direction: column;
