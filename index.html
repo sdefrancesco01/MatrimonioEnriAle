@@ -14,19 +14,36 @@
         }
 
         /* Sfondo principale */
-        .background {
-            background-image: url('IMG_4183.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 20px;
-        }
+/* Sfondo di base per mobile */
+.background {
+    background-image: url('IMG_4183.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Modifica lo sfondo per schermi più grandi (PC) */
+@media screen and (min-width: 768px) {
+    .background {
+        background-size: cover;
+        background-position: top center; /* Cambia la posizione dello sfondo per migliorare la visibilità */
+    }
+}
+
+/* Se vuoi un'immagine di sfondo diversa per PC */
+@media screen and (min-width: 1024px) {
+    .background {
+        background-image: url('Sfondo Sito Matrimonio.png'); /* Puoi usare un'immagine specifica per desktop */
+    }
+}
+
 
         /* Titolo */
         h1 {
