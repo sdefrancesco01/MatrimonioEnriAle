@@ -56,13 +56,21 @@
         }
 
         /* Immagine finale sotto il testo */
-        .footer-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0; /* Opzionale: aggiunge spazio sopra e sotto l'immagine */
-        text-align: center;
-        }
+.footer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Spazio sopra e sotto l'immagine */
+    text-align: center;
+}
+
+.footer-image img {
+    width: 90%; /* Occupa il 90% della larghezza disponibile */
+    max-width: 600px; /* Non supera i 600px su schermi grandi */
+    height: auto; /* Mantiene le proporzioni */
+    border-radius: 10px; /* Arrotonda leggermente i bordi */
+}
+
 
     </style>
 </head>
