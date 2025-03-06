@@ -88,24 +88,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Rimuove il margine */
-    padding: 0; /* Rimuove il padding */
+    margin: 0;
+    padding: 0;
     text-align: center;
-        justify-content: center;
-            width: fit-content;
-            height: fit-content;
+    width: 100%; /* Si assicura che occupi tutta la larghezza */
 }
 
 .footer-image img {
     background-color: transparent;
-    width: 100%; /* Imposta l'immagine a riempire il contenitore */
-        justify-content: center;
-    max-width: 600px; /* Mantieni una larghezza massima */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
+    width: 100%; /* Imposta la larghezza dell'immagine al 100% */
+    max-width: 100%; /* Impedisce che l'immagine si espanda oltre la larghezza */
+    height: auto;
     border-radius: 10px;
-    display: block; /* Impedisce che l'immagine abbia spazio sotto di essa */
+    display: block; /* Rimuove lo spazio sotto l'immagine */
 }
-
 
         /* Stile per la sezione "Luogo" */
 .location-section {
