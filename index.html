@@ -121,13 +121,19 @@
 }
 
         /* Sezione Mappa */
-.map-section iframe {
-    width: 80%; /* La mappa occuperà tutta la larghezza disponibile */
-    max-height: 400px; /* Imposta un'altezza fissa per la mappa */
-    border: 0;
-    /* Puoi usare 'max-width' se vuoi limitare la larghezza massima */
-    max-width: 100%; /* Assicura che la mappa non superi la larghezza del contenitore */
-}
+        /* Per schermi più piccoli */
+        @media screen and (max-width: 768px) {
+            .map-section iframe {
+                height: 300px; /* Imposta un'altezza inferiore per dispositivi mobili */
+            }
+        }
+
+        /* Per schermi molto grandi */
+        @media screen and (min-width: 1024px) {
+            .map-section iframe {
+                height: 500px; /* Imposta un'altezza maggiore per schermi più grandi */
+            }
+        }
 
 
         .travel-section {
