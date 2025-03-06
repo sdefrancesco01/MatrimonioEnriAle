@@ -79,21 +79,23 @@
 
         /* Immagine finale sotto il testo */
 .footer-image {
-    background-color: transparent !important; /* Forza la trasparenza */
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 0; /* Rimuove il margine */
+    padding: 0; /* Rimuove il padding */
     text-align: center;
+    width: 100%; /* Garantisce che il contenitore occupi tutta la larghezza */
 }
 
 .footer-image img {
     background-color: transparent;
-    width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
-    max-width: 600px; /* Imposta una larghezza massima per schermi più grandi */
-    height: auto; /* Mantiene le proporzioni */
+    width: 100%; /* Imposta l'immagine a riempire il contenitore */
+    max-width: 600px; /* Mantieni una larghezza massima */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
     border-radius: 10px;
-    border: none; /* Rimuove eventuali bordi indesiderati */
+    display: block; /* Impedisce che l'immagine abbia spazio sotto di essa */
 }
 
 
