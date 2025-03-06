@@ -15,7 +15,6 @@
 
 
 /* Sfondo principale */
-/* Sfondo principale */
 .background {
     background-image: url('IMG_4183.jpeg');
     background-size: cover; /* Mantiene l'immagine che copre tutta la pagina */
@@ -29,27 +28,57 @@
     align-items: center;
     color: white;
     padding: 20px;
-    background-color: transparent; /* Rimuove il bianco sovrapposto */
 }
 
-/* Sezione Luogo */
-.location-section {
-    background-color: transparent; /* Rimuove il bianco dietro */
-    text-align: center;
-    padding: 10px 10px;
+
+
+        /* Titolo */
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+        }
+
+        /* Paragrafo descrizione */
+        .description {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.6;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            background-color: transparent;
+        }
+
+        /* Logo del sito */
+/* Logo */
+.logo {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;  /* Centra orizzontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: auto;
 }
 
-/* Sezione Mappa */
-.map-section {
-    background-color: transparent; /* Rimuove il bianco dietro */
-    text-align: center;
-    margin-top: 10px;
-    padding: 0px 0px;
+/* Immagine del logo */
+.logo img {
+    max-width: 100%; /* Assicura che il logo non esca dal contenitore */
+    height: auto;    /* Mantiene le proporzioni del logo */
+    max-height: 150px; /* Imposta una altezza massima per il logo */
 }
 
-/* Sezione Footer Image */
+/* Media Query per schermi mobili */
+@media screen and (max-width: 768px) {
+    .logo img {
+        max-height: 120px; /* Puoi ridurre la dimensione del logo su dispositivi mobili */
+    }
+}
+
+
+        /* Immagine finale sotto il testo */
 .footer-image {
-    background-color: transparent; /* Rimuove il bianco dietro */
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,14 +94,83 @@
     border-radius: 10px; /* Arrotonda leggermente i bordi */
 }
 
-/* Sezione Viaggio */
-.travel-section {
+        /* Stile per la sezione "Luogo" */
+.location-section {
     background-color: transparent;
     text-align: center;
-    padding: 40px 20px;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Sfondo leggero per evidenziare il testo */
+    color: white; /* Mantiene il testo leggibile */
 }
 
-/* Sezione Stay Tuned */
+.location-section h2 {
+    background-color: transparent;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.location-section p {
+    background-color: transparent;
+    font-size: 1.2em;
+    color:black;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+        .map-section {
+            background-color: transparent;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+        /* Sezione Mappa */
+        /* Per schermi più piccoli */
+        @media screen and (max-width: 768px) {
+            .map-section iframe {
+                height: 300px; /* Imposta un'altezza inferiore per dispositivi mobili */
+                 width: 300px; /* Imposta un'altezza inferiore per dispositivi mobili */
+            }
+        }
+
+        /* Per schermi molto grandi */
+        @media screen and (min-width: 1024px) {
+            .map-section iframe {
+                height: 500px; /* Imposta un'altezza maggiore per schermi più grandi */
+                width: 500px; /* Imposta un'altezza maggiore per schermi più grandi */
+            }
+        }
+
+
+        .travel-section {
+            background-color: transparent;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Sfondo trasparente per contrastare */
+    color: white;
+}
+
+.travel-section h2 {
+    background-color: transparent;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.travel-section p {
+    background-color: transparent;
+    font-size: 1.2em;
+    color:black;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
 .stay-tuned {
     background-color: transparent;
     text-align: center;
@@ -81,12 +179,13 @@
 }
 
 .stay-tuned h3 {
+    background-color: transparent;
     font-size: 3em;
-    color: #f00a0a;
+    color: #f00a0a; /* Un colore vivace */
     font-weight: bold;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    animation: bounce 1.5s infinite alternate;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Effetto ombra per dare profondità */
+    animation: bounce 1.5s infinite alternate; /* Animazione simpatica */
 }
 
 @keyframes bounce {
