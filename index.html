@@ -13,7 +13,7 @@
             color: white;
         }
 
-        /* Sfondo principale */
+
 /* Sfondo principale */
 .background {
     background-image: url('IMG_4183.jpeg');
@@ -29,11 +29,6 @@
     color: white;
     padding: 20px;
 }
-
-
-
-
-
 
 
 
@@ -57,17 +52,29 @@
         }
 
         /* Logo del sito */
-        .logo {
-            margin-top:10px;
-            margin-bottom: 10px;
-            background-color: transparent;
-        }
+/* Logo */
+.logo {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;  /* Centra orizzontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: auto;
+}
 
-        .logo img {
-            width: 150px;
-            height: auto;
-            background-color: transparent;
-        }
+/* Immagine del logo */
+.logo img {
+    max-width: 100%; /* Assicura che il logo non esca dal contenitore */
+    height: auto;    /* Mantiene le proporzioni del logo */
+    max-height: 150px; /* Imposta una altezza massima per il logo */
+}
+
+/* Media Query per schermi mobili */
+@media screen and (max-width: 768px) {
+    .logo img {
+        max-height: 120px; /* Puoi ridurre la dimensione del logo su dispositivi mobili */
+    }
+}
+
 
         /* Immagine finale sotto il testo */
 .footer-image {
