@@ -42,19 +42,20 @@
         }
 
         /* Paragrafo descrizione */
+.container {
+    display: flex;
+    justify-content: center;  /* Centra orizzontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100vh;            /* Altezza intera della finestra */
+}
+
 .description {
     font-size: 1.5em;
     max-width: 800px;
-    margin-bottom: 10px;
     text-align: center;
     line-height: 1.6;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sfocatura ridotta */
-    background-color: transparent;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: black;
-       position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 
