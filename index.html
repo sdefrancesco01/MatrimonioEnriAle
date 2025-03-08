@@ -24,7 +24,7 @@
     background-attachment: fixed; /* Fissa lo sfondo durante lo scorrimento */
     width: 100vw; /* Imposta l'altezza della sezione come l'altezza della finestra */
     text-align: center;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: transparent;
@@ -44,11 +44,11 @@
 
 
 .description {
-   display: table-cell;
-    horizontal-align: middle;
-    font-size: 1.5em;
+    display: block;  /* Imposta il blocco per il margine automatico */
     max-width: 800px;
-    text-align: center;
+    margin: 0 auto; /* Centra orizzontalmente */
+    text-align: center; /* Centra il testo all'interno */
+    font-size: 1.5em;
     line-height: 1.6;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: black;
