@@ -25,19 +25,21 @@
     height: 100vh;
     background-image: url('SfondoSitoMatrimonio.png');
     background-size: cover;
-    background-position: left;
+    background-position: center;
+    background-attachment: fixed;
     z-index: -1;
 }
 
-/* Se il dispositivo è mobile, cambia il comportamento */
+/* Quando lo schermo è più piccolo (mobile) */
 @media screen and (max-width: 768px) {
     .background {
-        position: absolute; /* Evita problemi su mobile */
-        height: auto;
-        background-size: contain;
-        background-attachment: scroll;
+        background-size: contain; /* Mostra tutta l'immagine */
+        background-position: center center; /* Centra l'immagine */
+        background-attachment: scroll; /* Evita problemi con fixed su mobile */
+        width: 100%; /* Altezza adattabile */
     }
 }
+
 
 
 
