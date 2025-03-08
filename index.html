@@ -18,20 +18,24 @@
 
 /* Sfondo principale */
 .background {
-    position: fixed; /* Mantiene l'immagine fissa sullo sfondo */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Adatta la larghezza allo schermo */
-    height: 100vh; /* Adatta l'altezza allo schermo */
+    width: 100vw;
+    height: 100vh;
     background-image: url('SfondoSitoMatrimonio.png');
-    background-size: cover; /* Copre tutto lo schermo */
-    background-position: top; /* Centra l'immagine */
-    background-attachment: fixed; /* Sfondo fisso anche quando si scorre */
-    z-index: -1; /* Manda lo sfondo dietro tutto il resto */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
+
+/* Se il dispositivo è mobile, cambia il comportamento */
 @media screen and (max-width: 768px) {
     .background {
-        transform: rotate(90deg);
+        position: absolute; /* Evita problemi su mobile */
+        height: auto;
+        background-size: contain;
+        background-attachment: scroll;
     }
 }
 
