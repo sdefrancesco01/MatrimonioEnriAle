@@ -18,17 +18,18 @@
 
 /* Sfondo principale */
 .background {
+    position: fixed; /* Mantiene l'immagine fissa sullo sfondo */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Adatta la larghezza allo schermo */
+    height: 100vh; /* Adatta l'altezza allo schermo */
     background-image: url('IMG_4183.jpeg');
-    background-size: cover; /* Mantiene l'immagine che copre tutta la pagina */
+    background-size: cover; /* Copre tutto lo schermo */
     background-position: center; /* Centra l'immagine */
-    background-attachment: fixed; /* Fissa lo sfondo durante lo scorrimento */
-    width: 100vw; /* Imposta l'altezza della sezione come l'altezza della finestra */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: transparent;
+    background-attachment: fixed; /* Sfondo fisso anche quando si scorre */
+    z-index: -1; /* Manda lo sfondo dietro tutto il resto */
 }
+
 
 
 
@@ -44,15 +45,17 @@
 
 
 .description {
-    display: block;  /* Imposta il blocco per il margine automatico */
+    display: block;  
     max-width: 800px;
     margin: 0 auto; /* Centra orizzontalmente */
-    text-align: center; /* Centra il testo all'interno */
+    text-align: center; /* Centra il testo */
     font-size: 1.5em;
     line-height: 1.6;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: black;
+    position: relative; /* Si mantiene nel flusso del documento */
 }
+
 
 
         /* Logo del sito */
