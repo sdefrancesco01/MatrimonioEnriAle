@@ -40,12 +40,28 @@
 
 /* Quando lo schermo è più piccolo (mobile) */
 @media screen and (max-width: 768px) {
-    .background {
-        background-size: contain; /* Mostra tutta l'immagine */
-        background-position: center center; /* Centra l'immagine */
+.background {
     position: fixed;
-        width: 100%; /* Altezza adattabile */
-    }
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.background::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('SfondoSitoMatrimonio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 }
 
         /* Stile per la sezione "Luogo" */
